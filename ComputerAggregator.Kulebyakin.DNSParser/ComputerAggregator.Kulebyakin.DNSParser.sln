@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerAggregator.Kulebyakin.DNSParser", "ComputerAggregator.Kulebyakin.DNSParser\ComputerAggregator.Kulebyakin.DNSParser.csproj", "{B8C8C43C-2E63-4881-AF25-E3BE88DF5432}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DNSParser.UserInterfaces", "DNSParser.UserInterfaces", "{A541C824-CD48-45D2-8964-2EA2EC58886D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DNSParser.Service", "DNSParser.Service", "{24CF4EF6-99F5-4C21-84B7-544D34740BCE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DNSParser.Repo", "DNSParser.Repo", "{1B603C20-DAD3-4C8B-BC1A-A9A96C1694EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DNSParser.Data", "DNSParser.Data", "{428F2AE8-6794-41FA-9DA8-75D00768412E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DNSParser.CoreService", "DNSParser.CoreService\DNSParser.CoreService.csproj", "{AC918A9A-9A80-40DE-93D2-CE7E9D57FB45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DNSParser.Repository", "DNSParser.Repository\DNSParser.Repository.csproj", "{F5641493-574A-431B-9A60-49E470399922}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DNSParser.CoreDataEntities", "DNSParser.CoreDataEntities\DNSParser.CoreDataEntities.csproj", "{6985CF56-7ACF-4138-88DD-AFC035730CCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8C8C43C-2E63-4881-AF25-E3BE88DF5432}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8C8C43C-2E63-4881-AF25-E3BE88DF5432}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8C8C43C-2E63-4881-AF25-E3BE88DF5432}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8C8C43C-2E63-4881-AF25-E3BE88DF5432}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC918A9A-9A80-40DE-93D2-CE7E9D57FB45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC918A9A-9A80-40DE-93D2-CE7E9D57FB45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC918A9A-9A80-40DE-93D2-CE7E9D57FB45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC918A9A-9A80-40DE-93D2-CE7E9D57FB45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5641493-574A-431B-9A60-49E470399922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5641493-574A-431B-9A60-49E470399922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5641493-574A-431B-9A60-49E470399922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5641493-574A-431B-9A60-49E470399922}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6985CF56-7ACF-4138-88DD-AFC035730CCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6985CF56-7ACF-4138-88DD-AFC035730CCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6985CF56-7ACF-4138-88DD-AFC035730CCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6985CF56-7ACF-4138-88DD-AFC035730CCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B8C8C43C-2E63-4881-AF25-E3BE88DF5432} = {A541C824-CD48-45D2-8964-2EA2EC58886D}
+		{AC918A9A-9A80-40DE-93D2-CE7E9D57FB45} = {24CF4EF6-99F5-4C21-84B7-544D34740BCE}
+		{F5641493-574A-431B-9A60-49E470399922} = {1B603C20-DAD3-4C8B-BC1A-A9A96C1694EA}
+		{6985CF56-7ACF-4138-88DD-AFC035730CCF} = {428F2AE8-6794-41FA-9DA8-75D00768412E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D1C934C-DCC6-4240-9363-01D6EB0A7D5E}
+	EndGlobalSection
+EndGlobal
