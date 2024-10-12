@@ -12,6 +12,15 @@ namespace DNSParser.CoreService
             _itemRepository = itemRepository;
         }
 
+        private BaseItem GetItemFromDns(string name)
+        {
+            var parser = new ParserService();
+
+            var result = parser.SearchItem(name, 1);
+
+            return result;
+        }
+
         public bool DeleteItem(long id)
         {
             var itemRepository = GetItem(id);
@@ -24,6 +33,17 @@ namespace DNSParser.CoreService
         public BaseItem GetItem(long id)
         {
             return _itemRepository.Get(id);
+        }
+
+        public BaseItem GetItem(string name)
+        {
+            var result = _itemRepository.Get(name);
+            if (result == null)
+            {
+                result = GetItemFromDns(name);
+                _itemRepository.Insert(result);
+            }
+            return result;
         }
 
         public IEnumerable<BaseItem> GetItems()

@@ -14,6 +14,7 @@ namespace DNSParser.CoreDataEntities
             entityBuilder.HasKey(x => x.Id);
             entityBuilder.Property(x => x.Name).IsRequired();
             entityBuilder.Property(x => x.Price).IsRequired();
+            entityBuilder.Property(x => x.Uri).IsRequired(false);
         }
     }
 }

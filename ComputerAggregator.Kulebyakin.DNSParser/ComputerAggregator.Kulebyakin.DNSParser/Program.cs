@@ -20,14 +20,43 @@ builder.Services.AddTransient<IItemService, ItemService>();
 
 builder.Services.AddControllers();
 
+builder.Services.AddSwaggerGen();
+
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(MyAllowSpecificOrigins,
+        policy =>
+        {
+            policy.AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+        });
+});
+
 var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
 // Configure the HTTP request pipeline.
 
+app.UseCors(MyAllowSpecificOrigins);
+
 app.UseHttpsRedirection();
+
+
+
 
 app.UseAuthorization();
 
 app.MapControllers();
+
+
+
 
 app.Run();

@@ -12,9 +12,12 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.22.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ApiHandlers\ApiHandlers.csproj" />
     <ProjectReference Include="..\DNSParser.CoreDataEntities\DNSParser.CoreDataEntities.csproj" />
     <ProjectReference Include="..\DNSParser.Repository\DNSParser.Repository.csproj" />
   </ItemGroup>

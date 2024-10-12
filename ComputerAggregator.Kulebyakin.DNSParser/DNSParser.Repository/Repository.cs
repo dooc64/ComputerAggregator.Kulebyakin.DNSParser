@@ -28,6 +28,12 @@ namespace DNSParser.Repository
         {
             return entities.SingleOrDefault(s => s.Id == id);
         }
+
+        public T Get(string name)
+        {
+            return entities.SingleOrDefault(s => s.Name == name);
+        }
+
         public bool Insert(T entity)
         {
             if (entity == null)

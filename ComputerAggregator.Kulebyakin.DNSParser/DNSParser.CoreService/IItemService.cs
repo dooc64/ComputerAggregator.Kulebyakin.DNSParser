@@ -11,6 +11,7 @@ namespace DNSParser.CoreService
     {
         IEnumerable<BaseItem> GetItems();
         BaseItem GetItem(long id);
+        BaseItem GetItem(string name);
         bool InsertItem(BaseItem user);
         bool UpdateItem(BaseItem user);
         bool DeleteItem(long id);

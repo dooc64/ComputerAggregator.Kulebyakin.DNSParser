@@ -11,6 +11,7 @@ namespace DNSParser.Repository
     {
         IEnumerable<T> GetAll();
         T Get(long id);
+        T Get(string id);
         bool Insert(T entity);
         bool Update(T entity);
         bool Delete(T entity);

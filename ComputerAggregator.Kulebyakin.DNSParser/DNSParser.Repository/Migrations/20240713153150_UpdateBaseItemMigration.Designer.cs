@@ -3,6 +3,7 @@ using System;
 using DNSParser.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace DNSParser.Repository.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
-    partial class ApplicationContextModelSnapshot : ModelSnapshot
+    [Migration("20240713153150_UpdateBaseItemMigration")]
+    partial class UpdateBaseItemMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -30,16 +33,9 @@ namespace DNSParser.Repository.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
 
-                    b.Property<Guid>("Guid")
-                        .HasColumnType("uuid");
-
                     b.Property<byte[]>("Image")
                         .IsRequired()
                         .HasColumnType("bytea");
-
-                    b.Property<string>("ImageUrl")
-                        .IsRequired()
-                        .HasColumnType("text");
 
                     b.Property<DateTime>("LastModifedDate")
                         .HasColumnType("timestamp with time zone");
@@ -52,6 +48,7 @@ namespace DNSParser.Repository.Migrations
                         .HasColumnType("numeric");
 
                     b.Property<string>("Uri")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");

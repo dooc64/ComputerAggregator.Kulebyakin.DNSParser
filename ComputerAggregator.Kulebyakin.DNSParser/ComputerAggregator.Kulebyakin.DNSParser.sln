@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerAggregator.Kulebyakin.DNSParser", "ComputerAggregator.Kulebyakin.DNSParser\ComputerAggregator.Kulebyakin.DNSParser.csproj", "{B8C8C43C-2E63-4881-AF25-E3BE88DF5432}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComputerAggregator.Kulebyakin.DNSParser", "ComputerAggregator.Kulebyakin.DNSParser\ComputerAggregator.Kulebyakin.DNSParser.csproj", "{B8C8C43C-2E63-4881-AF25-E3BE88DF5432}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DNSParser.UserInterfaces", "DNSParser.UserInterfaces", "{A541C824-CD48-45D2-8964-2EA2EC58886D}"
 EndProject
@@ -13,11 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DNSParser.Repo", "DNSParser
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DNSParser.Data", "DNSParser.Data", "{428F2AE8-6794-41FA-9DA8-75D00768412E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DNSParser.CoreService", "DNSParser.CoreService\DNSParser.CoreService.csproj", "{AC918A9A-9A80-40DE-93D2-CE7E9D57FB45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DNSParser.CoreService", "DNSParser.CoreService\DNSParser.CoreService.csproj", "{AC918A9A-9A80-40DE-93D2-CE7E9D57FB45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DNSParser.Repository", "DNSParser.Repository\DNSParser.Repository.csproj", "{F5641493-574A-431B-9A60-49E470399922}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DNSParser.Repository", "DNSParser.Repository\DNSParser.Repository.csproj", "{F5641493-574A-431B-9A60-49E470399922}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DNSParser.CoreDataEntities", "DNSParser.CoreDataEntities\DNSParser.CoreDataEntities.csproj", "{6985CF56-7ACF-4138-88DD-AFC035730CCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DNSParser.CoreDataEntities", "DNSParser.CoreDataEntities\DNSParser.CoreDataEntities.csproj", "{6985CF56-7ACF-4138-88DD-AFC035730CCF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ParserHandlerDomain", "ParserHandlerDomain", "{38300F43-CD72-49AB-B78F-B9ED4E8ACBA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiHandlers", "ApiHandlers\ApiHandlers.csproj", "{6019D27E-14B2-4CCD-AB6B-E31CA26628CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +45,10 @@ Global
 		{6985CF56-7ACF-4138-88DD-AFC035730CCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6985CF56-7ACF-4138-88DD-AFC035730CCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6985CF56-7ACF-4138-88DD-AFC035730CCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6019D27E-14B2-4CCD-AB6B-E31CA26628CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6019D27E-14B2-4CCD-AB6B-E31CA26628CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6019D27E-14B2-4CCD-AB6B-E31CA26628CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6019D27E-14B2-4CCD-AB6B-E31CA26628CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +58,7 @@ Global
 		{AC918A9A-9A80-40DE-93D2-CE7E9D57FB45} = {24CF4EF6-99F5-4C21-84B7-544D34740BCE}
 		{F5641493-574A-431B-9A60-49E470399922} = {1B603C20-DAD3-4C8B-BC1A-A9A96C1694EA}
 		{6985CF56-7ACF-4138-88DD-AFC035730CCF} = {428F2AE8-6794-41FA-9DA8-75D00768412E}
+		{6019D27E-14B2-4CCD-AB6B-E31CA26628CF} = {38300F43-CD72-49AB-B78F-B9ED4E8ACBA3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2D1C934C-DCC6-4240-9363-01D6EB0A7D5E}
